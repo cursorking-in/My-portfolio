@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhinav Tiwari | AI Data Specialist</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="nav">
+    <div class="logo">AT</div>
+    <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Better data leads to better AI</h1>
+
+    <p>
+        I work with AI teams to improve data quality, evaluate outputs, 
+        and generate real-world training data across voice and multimodal systems.
+    </p>
+
+    <div class="hero-actions">
+        <a href="#contact" class="btn">Start a Project</a>
+        <a href="https://www.linkedin.com/in/abhinavtiwarirewa/" target="_blank" class="link">LinkedIn</a>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section fade" id="services">
+    <h2>What I do</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>AI QA & Evaluation</h3>
+            <p>Improve clarity, tone, and reliability of model outputs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Speech & Voice QA</h3>
+            <p>Ensure natural pronunciation and dataset consistency.</p>
+        </div>
+
+        <div class="card">
+            <h3>Voice Data Recording</h3>
+            <p>Record high-quality datasets for voice model training.</p>
+        </div>
+
+        <div class="card">
+            <h3>Annotation</h3>
+            <p>Structured labeling across text, audio, and images.</p>
+        </div>
+    </div>
+</section>
+
+<!-- WORK -->
+<section class="section fade" id="work">
+    <h2>Selected Work</h2>
+
+    <div class="grid">
+        <div class="card clickable" onclick="openModal(0)">
+            <h3>Voice Dataset QA</h3>
+            <p>Large-scale Hindi audio datasets</p>
+        </div>
+
+        <div class="card clickable" onclick="openModal(1)">
+            <h3>AI Evaluation</h3>
+            <p>Conversational AI responses</p>
+        </div>
+
+        <div class="card clickable" onclick="openModal(2)">
+            <h3>Multimodal QA</h3>
+            <p>Text, audio, and image datasets</p>
+        </div>
+
+        <div class="card clickable" onclick="openModal(3)">
+            <h3>Robotics Training</h3>
+            <p>Real-world behavioral data</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section fade" id="contact">
+    <h2>Start a project</h2>
+
+    <form action="https://formspree.io/f/xgopwzby" method="POST">
+
+        <div class="grid">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+        </div>
+
+        <select name="service">
+            <option value="">Service</option>
+            <option>AI QA</option>
+            <option>Voice QA</option>
+            <option>Voice Recording</option>
+        </select>
+
+        <textarea name="message" rows="5" placeholder="What are you trying to improve?" required></textarea>
+
+        <button class="btn">Start Project</button>
+    </form>
+
+    <p class="note">Response within 24 hours.</p>
+</section>
+
+<footer>
+    © 2026 Abhinav Tiwari
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-box">
+        <span class="close" onclick="closeModal()">×</span>
+        <div id="modal-content"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
