@@ -1,8 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: system-ui;
     background: #020617;
     color: #e2e8f0;
+    overflow-x: hidden;
 }
 
 /* Glow */
@@ -14,7 +19,7 @@ body::before {
     background: radial-gradient(circle, #38bdf8, transparent);
     top: -250px;
     left: -250px;
-    filter: blur(160px);
+    filter: blur(150px);
     opacity: 0.2;
     z-index: -1;
 }
@@ -23,15 +28,22 @@ body::before {
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 8%;
     position: fixed;
     width: 100%;
-    background: rgba(2,6,23,0.6);
+    background: rgba(2,6,23,0.7);
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
 /* HERO */
 .hero {
-    padding: 200px 20px;
+    padding: 200px 20px 120px;
     text-align: center;
 }
 
@@ -48,6 +60,15 @@ body::before {
     color: #94a3b8;
 }
 
+.hero-actions {
+    margin-top: 20px;
+}
+
+.link {
+    margin-left: 15px;
+    color: #38bdf8;
+}
+
 /* BUTTON */
 .btn {
     padding: 12px 24px;
@@ -56,6 +77,11 @@ body::before {
     border: none;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
 }
 
 /* SECTION */
@@ -79,11 +105,15 @@ body::before {
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
+}
+
+.clickable {
+    cursor: pointer;
 }
 
 /* FORM */
-form input, form textarea, form select {
+form input, form textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 12px;
@@ -121,4 +151,11 @@ form input, form textarea, form select {
 footer {
     text-align: center;
     padding: 30px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero h1 {
+        font-size: 2.4rem;
+    }
 }
