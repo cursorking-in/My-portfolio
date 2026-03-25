@@ -29,66 +29,93 @@
 
     <div class="hero-actions">
         <a href="#contact" class="btn">Start a Project</a>
+        <a href="mailto:contact@cursorking.co.in" class="link">Email</a>
         <a href="https://www.linkedin.com/in/abhinavtiwarirewa/" target="_blank" class="link">LinkedIn</a>
     </div>
 </section>
 
+<!-- PROOF -->
+<section class="section">
+    <div class="grid">
+
+        <div class="card">
+            <h2>10K+</h2>
+            <p>Audio samples reviewed</p>
+        </div>
+
+        <div class="card">
+            <h2>Multi-domain</h2>
+            <p>Voice, text, and multimodal QA</p>
+        </div>
+
+        <div class="card">
+            <h2>Ongoing</h2>
+            <p>Robotics training data work</p>
+        </div>
+
+    </div>
+</section>
+
 <!-- SERVICES -->
-<section class="section fade" id="services">
+<section class="section" id="services">
     <h2>What I do</h2>
 
     <div class="grid">
+
         <div class="card">
             <h3>AI QA & Evaluation</h3>
-            <p>Improve clarity, tone, and reliability of model outputs.</p>
+            <p>Improve clarity, tone, and usefulness of outputs.</p>
         </div>
 
         <div class="card">
             <h3>Speech & Voice QA</h3>
-            <p>Ensure natural pronunciation and dataset consistency.</p>
+            <p>Fix pronunciation and natural delivery issues.</p>
         </div>
 
         <div class="card">
-            <h3>Voice Data Recording</h3>
-            <p>Record high-quality datasets for voice model training.</p>
+            <h3>Voice Recording</h3>
+            <p>Dataset creation for voice models.</p>
         </div>
 
         <div class="card">
             <h3>Annotation</h3>
-            <p>Structured labeling across text, audio, and images.</p>
+            <p>Structured labeling across data types.</p>
         </div>
+
     </div>
 </section>
 
 <!-- WORK -->
-<section class="section fade" id="work">
+<section class="section" id="work">
     <h2>Selected Work</h2>
 
     <div class="grid">
+
         <div class="card clickable" onclick="openModal(0)">
             <h3>Voice Dataset QA</h3>
-            <p>Large-scale Hindi audio datasets</p>
+            <p>Large Hindi audio datasets</p>
         </div>
 
         <div class="card clickable" onclick="openModal(1)">
             <h3>AI Evaluation</h3>
-            <p>Conversational AI responses</p>
+            <p>Conversational systems</p>
         </div>
 
         <div class="card clickable" onclick="openModal(2)">
             <h3>Multimodal QA</h3>
-            <p>Text, audio, and image datasets</p>
+            <p>Text, audio, image datasets</p>
         </div>
 
         <div class="card clickable" onclick="openModal(3)">
             <h3>Robotics Training</h3>
-            <p>Real-world behavioral data</p>
+            <p>Real-world task data</p>
         </div>
+
     </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section fade" id="contact">
+<section class="section" id="contact">
     <h2>Start a project</h2>
 
     <form action="https://formspree.io/f/xgopwzby" method="POST">
@@ -98,19 +125,12 @@
             <input type="email" name="email" placeholder="Your email" required>
         </div>
 
-        <select name="service">
-            <option value="">Service</option>
-            <option>AI QA</option>
-            <option>Voice QA</option>
-            <option>Voice Recording</option>
-        </select>
-
         <textarea name="message" rows="5" placeholder="What are you trying to improve?" required></textarea>
 
-        <button class="btn">Start Project</button>
+        <button class="btn">Send Message</button>
     </form>
 
-    <p class="note">Response within 24 hours.</p>
+    <p class="note">I usually respond within 24 hours.</p>
 </section>
 
 <footer>
@@ -126,5 +146,6 @@
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
